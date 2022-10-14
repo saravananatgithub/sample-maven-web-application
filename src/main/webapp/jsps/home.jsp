@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Fresh KiteTechnologies- Home Page</title>
+<title>Fresh KiteTechnologies- Home Page </title>
 <link href="images/Fresh Kitelogo.jpg" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Fresh Kite Software Academy Solutions </h1>
+<h1 align="center">Welcome to Fresh Kite Software Academy Solutions for budding IT Professionals</h1>
 <h1 align="center"> Fresh Kite Software Solutions- Very Good Training center for DevOps and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
