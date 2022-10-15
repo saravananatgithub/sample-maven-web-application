@@ -32,8 +32,8 @@ public class BasicTest {
 			e.printStackTrace();
 		}
 
-		System.out.println(
-				"-------- " + driver.findElement(By.xpath("//h1[normalize-space()='CEO: Bala Shanmugham']")).getText());
+//		System.out.println(
+//				"-------- " + driver.findElement(By.xpath("//h1[normalize-space()='CEO: Bala Shanmugham']")).getText());
 
 		// //h1[normalize-space()='CEO: Bala Shanmugham']
 		Assert.assertTrue(driver.findElement(By.xpath("//h1[normalize-space()='CEO: Bala Shanmugham']")).getText()
