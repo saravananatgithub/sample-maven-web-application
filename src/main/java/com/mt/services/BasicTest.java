@@ -12,10 +12,18 @@ public class BasicTest {
 
 	@Test
 	public void testCEO() {
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		System.setProperty("webdriver.chrome.driver", "C:/sarva/selenium/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.get("http://localhost:9090/sample/");
 		try {
 			Thread.sleep(4000);
