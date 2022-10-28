@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+sample,com.mt.services,EmployeeService,35,0,0,0,8,0,2,0,2,0
+sample,com.mt.services,BasicTest,52,0,0,0,21,0,2,0,2,0
+sample,com.mt.services.test,TestCodeLibrary,11,52,1,1,3,16,2,6,1,6
+sample,com.mt.services.test,CodeLibrary,0,85,1,7,0,16,1,6,0,3
