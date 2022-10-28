@@ -35,7 +35,7 @@ public class TestCodeLibrary {
 		assertTrue(!obj.isPalindrome("KITE"));
 	}
 
-	//@Test
+	@Test
 	public void whenItIsAPalindrome() {
 		final CodeLibrary obj = new CodeLibrary();
 		assertTrue(obj.isPalindrome("LIRIL"));
