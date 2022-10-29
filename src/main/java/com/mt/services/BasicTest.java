@@ -12,14 +12,14 @@ public class BasicTest {
 
 	@Test
 	public void testCEO() {
-		
+
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		System.setProperty("webdriver.chrome.driver", "C:/sarva/selenium/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -28,18 +28,17 @@ public class BasicTest {
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		}
 
-//		System.out.println(
-//				"-------- " + driver.findElement(By.xpath("//h1[normalize-space()='CEO: Bala Shanmugham']")).getText());
+		try {
+			System.out.println("-----%%%%%%%%-----"  + driver.getPageSource().contains("CEO: Bala Shanmugham"));			
+			Assert.assertTrue(driver.getPageSource().contains("CEO: Bala Shanmugham"));
+		} catch (Throwable th) {
 
-		// //h1[normalize-space()='CEO: Bala Shanmugham']
-		Assert.assertTrue(driver.findElement(By.xpath("//h1[normalize-space()='CEO: Bala Shanmugham']")).getText()
-				.contains("CEO: Bala Shanmugham"));
-
-		driver.quit();
-
+			driver.quit();
+			th.printStackTrace();
+			Assert.fail();
+		}
 	}
 }
