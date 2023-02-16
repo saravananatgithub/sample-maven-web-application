@@ -33,7 +33,7 @@ public class BasicTest {
 
 		try {
 			System.out.println("-----%%%%%%%%-----"  + driver.getPageSource().contains("CEO: Bala Shanmugham"));			
-			Assert.assertTrue(driver.getPageSource().contains("CEO: Bala Shanmugham"));
+			Assert.assertTrue(driver.getPageSource().contains("CEO: Saravanan"));
 		} catch (Throwable th) {
 
 			driver.quit();
