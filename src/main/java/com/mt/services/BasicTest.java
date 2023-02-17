@@ -2,11 +2,13 @@ package com.mt.services;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasicTest {
 
@@ -20,10 +22,14 @@ public class BasicTest {
 			e.printStackTrace();
 		}
 
-		System.setProperty("webdriver.chrome.driver", "C:/sarva/selenium/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+
+		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(false);
+
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 		driver.get("http://localhost:9090/sample/");
 		try {
 			Thread.sleep(4000);
@@ -32,8 +38,11 @@ public class BasicTest {
 		}
 
 		try {
-			System.out.println("-----%%%%%%%%-----"  + driver.getPageSource().contains("CEO: Bala Shanmugham"));			
-			Assert.assertTrue(driver.getPageSource().contains("CEO: Saravanan"));
+			System.out.println("-----%%%%%%%%-----" + driver.getPageSource().contains("CEO: Bala Shanmugham"));
+
+			Assert.assertTrue(driver.getPageSource().contains("CEO: Bala Shanmugham"));
+
+			System.out.println("----------" + driver.getPageSource().contains("CEO: Bala Shanmugham"));
 		} catch (Throwable th) {
 
 			driver.quit();
