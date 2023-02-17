@@ -38,9 +38,8 @@ public class BasicTest {
 		}
 
 		try {
-			System.out.println("-----%%%%%%%%-----" + driver.getPageSource().contains("CEO: Bala Shanmugham"));
 
-			Assert.assertTrue(driver.getPageSource().contains("CEO: Bala Shanmugham"));
+			Assert.assertTrue(driver.getPageSource().contains("CEO: Saravanan"));
 
 			System.out.println("----------" + driver.getPageSource().contains("CEO: Bala Shanmugham"));
 		} catch (Throwable th) {
