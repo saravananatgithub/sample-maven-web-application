@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Fresh Kite Software Academy Solutions for budding IT Guys</h1>
-<h1 align="center">CEO: Gowtham</h1>
+<h1 align="center">CEO: Neelam</h1>
 <h1 align="center">CFO: Bala Murugan</h1>
 <h1 align="center"> Fresh Kite Software Solutions- Very Good Training center for DevOps and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
